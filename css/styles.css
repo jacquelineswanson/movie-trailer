@@ -8,15 +8,24 @@
 * {
     outline: 1px dotted black;
 }
+
+/*Parent Container*/
 main { 
   display: grid;
   grid-template-columns: 1fr;
 }
 
+/* The Cast of the Movie*/
 .cast {  
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Custom UI Controls */
+.plyr--full-ui input[type="range"] {
+  color: #ff7e0c;
+}
+
 
 /* Media Queries */
 /* 
