@@ -14,16 +14,23 @@
 /*Parent Container*/
 body {
 
-background-image: url(https://cdn4.vectorstock.com/i/1000x1000/42/33/lined-paper-vector-18474233.jpg);
+background-image: url(../img/LinedPaper.jpg);
 background-size: 100%;
+
 
 }
 main { 
 display: grid;
 grid-template-columns: 1fr;
 margin: 0 auto;
-/*margin-top: 20px;*/
-width: 75%;
+margin-top: 50px;
+width: 80%;
+}
+
+/*Trailer*/
+.trailer {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Type */
@@ -35,7 +42,7 @@ text-align: center;
 }
 
 h1 {
- font-size: 4em;
+ font-size: 5em;
  color: orange;
 }
 
