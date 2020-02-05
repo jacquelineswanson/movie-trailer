@@ -1,30 +1,32 @@
 /* My Awesome Styles */
 
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
 
-* {
-  outline: 1px dotted black;
-}
 
-@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt&display=swap');
+
+
 
 /*Parent Container*/
+
 body {
 
 background-image: url(../img/LinedPaper.jpg);
 background-size: 100%;
 
-
 }
+
 main { 
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr;
 margin: 0 auto;
 margin-top: 50px;
 width: 80%;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*Trailer*/
@@ -35,108 +37,111 @@ width: 80%;
 
 /* Type */
 h1,
-.info,
-blockquote {
-font-family: 'Reenie Beanie', cursive;
+.info p {
+font-family: 'Reenie Beanie', sans-serif;
 text-align: center;
 }
 
 h1 {
  font-size: 5em;
- color: orange;
+ color: red;
 }
 
+.info p {
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style: none;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: .75em;
+}
+
+h3,
 blockquote {
+  text-align: center;
+  font-family: 'Reenie Beanie', sans-serif;
   font-size: 2em;
+  margin: 10px;
 }
 
 /* The Cast of the Movie*/
 .cast {  
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+}
+
+figure {
+  margin: .25em;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+figure h2 {
+  position: absolute;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 1.25em;
+  transition: all 100ms ease-out;
+  width: 100%;
+  opacity: 0;
+  bottom: 0px;
+  height: 1em;
+  background-color: white;
+  padding: .1em;
+  text-align: center;
+  border-radius: 5%;
+}
+
+figure:hover h2{
+  opacity: 1;
 }
 
 img {
-width: 20vh;
+width: 25vh;
+border-radius: 5%;
 }
+
 
 /* Custom UI Controls */
 .plyr--full-ui input[type="range"] {
-color: #ff7e0c;
+color: blue;
 }
 
 
 /* Media Queries */
-/* 
-Mobile: 
-* 384px = 24em
-*/
-@media only screen and (min-width: 0) { 
-  
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Mobile Size";
-}
-
-}
-
-/* Tablet:  
-* 768px = 48em 
-*/
-@media only screen and (min-width: 24em)  {
-  
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Tablet Size";
-}
-
-}
-
-/* Desktop: 
-* 1152px = 72em
-*/
-@media screen and (min-width: 72em)  { 
-
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Desktop Size";
-}
-
-}
-
-/* Wide Desktop: 
-* 1440px = 90em
-*/
-@media screen and (min-width: 90em) { 
-
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Wide Desktop Size";
-}
-
-}
-
-
 
 
 @media only screen 
 and (min-width: 0) 
 and (max-width: 48em)  { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
+ 
+  main {
+    display: block;
   }
-  
-  .cast {
-    text-align: center;
-    justify-content: center;
+
+  img {
+    width: 15vh;
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  figure h2 {
+    font-size: 1em;
+  }
+  h3,
+  blockquote {
+    font-size: 1.5em;
+  }
+   
 
 }
 
@@ -148,10 +153,24 @@ and (max-width: 48em)  {
 and (min-width: 48em) 
 and (max-width: 64em)  {
   
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Tablet Size";
+
+     main {
+      display: block;
+    }
+  
+    img {
+      width: 20vh;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+  
+    figure h2 {
+      font-size: 1em;
+    }
+
+     
 } 
   
 }
@@ -164,11 +183,7 @@ body:before {
 and (min-width: 64em) 
 and (max-width: 90em) { 
 
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Desktop Size";
-}
+
 
 }
 
@@ -178,11 +193,7 @@ body:before {
 */
 @media screen and (min-width: 90em) { 
 
-/* Diagnostic Styling. Delete When Done. */
-body:before {
-     background: yellow;
-     content: "Wide Desktop Size";
-}
+
 
 }
 
