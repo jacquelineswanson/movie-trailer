@@ -26,3 +26,18 @@ let messages = [
   let greeting = document.querySelector('h1')
   // Change element content
   greeting.innerHTML = messages[ numRand ];
+
+
+  //toggle background
+  let trigger = document.querySelector('h4');
+ let body = document.querySelector('body');
+
+
+
+// on click do this
+trigger.addEventListener( 'click' , function(){
+  
+  // whatever we want to do
+  body.classList.toggle('bg2');
+  
+});
