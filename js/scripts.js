@@ -9,11 +9,11 @@ const player = new Plyr('#player', {
     
 // Store Messages
 let messages = [
-    'You gonna eat your tots?',
-    'Tina you fat lard, come get some dinner!', 
-    'I caught you a delicious bass',
-    'Whatever I feel like I wanna do, GOSH!',
-    'Girls only want boyfriends who have great skills!'
+    '"You gonna eat your tots?"',
+    '"Tina you fat lard, come get some dinner!"', 
+    '"I caught you a delicious bass"',
+    '"Whatever I feel like I wanna do, GOSH!"',
+    '"Girls only want boyfriends who have great skills!"'
   ]
   
   // Get Random Number
@@ -29,7 +29,7 @@ let messages = [
 
 
   //toggle background
-  let trigger = document.querySelector('h4');
+  let trigger = document.querySelector('h6');
  let body = document.querySelector('body');
 
 

@@ -46,6 +46,7 @@ grid-template-columns: 1fr 1fr;
 margin: 0 auto;
 margin-top: 50px;
 width: 80%;
+margin-bottom: 50px;
 }
 
 .info {
@@ -93,7 +94,8 @@ h4 {
   font-weight: 900;
 }
 
-h5 {
+h5,
+h6 {
   padding: 20px;
 	color: red;
   border: 2px solid black;
@@ -104,6 +106,12 @@ h5 {
   text-align: center;
   transform: rotate(5deg);
   background: white;
+}
+
+h6 {
+  height: 2em;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .info p {
@@ -212,6 +220,8 @@ and (max-width: 48em)  {
     display: block;
   }
 
+  
+
   h1 {
     margin-top: 3px;
     font-size: 1.5em;
@@ -253,6 +263,24 @@ and (max-width: 48em)  {
     font-size: 1.5em;
   }
    
+  h5,
+  h6 {
+    font-size: 1em;
+    height: 1.5em;
+  }
+
+  h6 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+
 
 }
 
@@ -279,6 +307,22 @@ and (max-width: 64em)  {
   
     figure h2 {
       font-size: 1em;
+    }
+
+    h4 {
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    h5,
+    h6 {
+      font-size: 1em;
+      height: 1.5em;
+    }
+
+    h6 {
+      margin-top: 0px;
+      margin-bottom: 30px;
     }
 
      
